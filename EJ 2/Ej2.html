@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        Person = new Object();
+
+        Person.edad = 21;
+
+        function removeProperty(obj, prop){
+
+            let salida = false;
+
+            if(obj.hasOwnProperty(prop)){
+                delete obj['edad'];
+                salida = true;
+             }
+
+             return salida;
+        }
+        
+        console.log(removeProperty(Person, 'ruedas') + ' ' + Person.ruedas);
+        console.log('Vemos el valor de la prop: ' + Person.edad + ' ahora borramos la propiedad' +
+         removeProperty(Person, 'edad') + ' y... ' + Person.edad);
+        </script>
+    
+</body>
+</html>

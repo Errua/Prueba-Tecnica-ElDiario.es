@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function formatDate(fecha){
+            
+            var arrayDeCadenas = fecha.split("/");
+                //console.log(arrayDeCadenas);
+
+                var salida = "";
+                return salida.concat(arrayDeCadenas[2],arrayDeCadenas[0],arrayDeCadenas[1]);
+                
+        } 
+        console.log(formatDate('11/26/2014'));
+        </script>
+    
+</body>
+</html>
